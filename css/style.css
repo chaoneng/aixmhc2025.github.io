@@ -1,0 +1,212 @@
+.background-image {
+    position: fixed; /* 或 absolute，根據需要調整 */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /*background: url('../images/bg.jpg') center center / cover no-repeat fixed;*/
+    opacity: 0.2; /* 設定透明度 */
+    z-index: -1; /* 確保背景在其他內容之下 */
+}
+
+p{
+	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; 
+    margin: 20px ;
+    font-size: 18px;
+	margin-bottom:auto;
+    line-height: 1.5;
+	letter-spacing: -.1px;
+}
+h1, h2, h4, h5, h6{
+  font-weight: normal;
+  font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+h3{
+  font-size: 43px;
+  font-weight: normal;
+  font-family:Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", "serif";
+}
+h3::after{
+  content: '';
+  display: inline-block;
+  width: 30px;
+  height: 8px;
+  background-color: #5C9CD6;
+  line-height:0;
+  margin-left: 10px;
+}
+h4.oblique {
+  font-style: oblique; /* 文字斜體 */
+}
+h5 {
+  position: relative;
+  margin-bottom: 18px;
+}
+
+h5::after {
+  content: ''; 
+  position: absolute; 
+  left: 0; 
+  bottom: -10px; 
+  width: 100%; 
+  height: 2px; 
+  background-color: #555555;
+}
+/*****滑鼠靠近變色*****/
+.navbar-nav li a:hover{
+    background-color: #5C9CD6;/*****mouse over*********/
+	color: #FFFFFF;
+    }
+/* 下拉式選單在懸停時顯示 */
+.nav-item.dropdown:hover .dropdown-menu {
+  display: block;
+}
+
+/* 調整下拉選單的位置 */
+.navbar .dropdown-menu {
+  top: 100%; /* 使下拉選單緊貼導航欄 */
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+/* 調整下拉選單的位置和寬度 */
+.navbar .dropdown-menu {
+  top: 100%; /* 使下拉選單緊貼導航欄 */
+  left: 0;
+  right: 0;
+  margin: 0;
+  width: 250px; /* 設置下拉選單的固定寬度，根據需要調整 */
+}
+
+/* 調整下拉選單項目的樣式 */
+.navbar .dropdown-menu .dropdown-item {
+  white-space: normal; /* 允許文字換行 */
+}
+
+.button {
+  border: none;
+  color: #5C9CD6;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+
+.button1 {
+  margin-top: 20px;
+  background-color: #5C9CD6;
+  color: white; 
+}
+
+.button1:hover {
+  background-color: #3AE0BE;
+  color: white;
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+}
+.image-container {
+  display: flex;
+  justify-content: center; /* 水平置中 */
+  align-items: center; /* 垂直置中 */
+  height: 100%; /* 設置容器高度為100% */
+  margin-top: -20px;
+}
+
+.image-container img {
+  max-width: 100%; /* 限制圖片的最大寬度為95% */
+  height: auto; /* 保持圖片的寬高比 */
+}
+
+/*****Registration表格版面*****/
+table {
+  width: 40%; /* 可以根據需要調整寬度 */
+  border-collapse: collapse;
+  margin: 0 auto; /* 確保表格居中 */
+}
+th, td {
+  border: 1px solid #C2C2C2;
+  padding: 8px;
+  text-align: left;
+}
+th {
+  background-color: #f2f2f2;
+}
+
+/* 手機裝置響應式設計 */
+@media (max-width: 600px) {
+  table {
+    width: 90%; /* 手機裝置上的表格寬度設為90%，確保兩個表格一致 */
+    margin: 0 auto; /* 表格保持居中 */
+  }
+  
+  th, td {
+    padding: 12px; /* 手機裝置的單元格間距調整 */
+    text-align: left; /* 手機上單元格文字左對齊，方便閱讀 */
+  }
+}
+
+.header-cell {
+  text-align: center;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #C2C2C2;
+}
+
+/*****Keynotes版面*****/
+.KNcontainer {
+  width: 100%;
+  height: 80%;
+}
+.row {
+  display: flex;
+  width: 100%;
+  height: auto;
+  margin-bottom: 20px;
+}
+.left {
+  flex: 8;
+}
+.right {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.right img {
+  width: 100%;
+  height: auto;
+  max-width: 200px;
+  margin-bottom: 0px;
+}
+.divider {
+  width: 95%;
+  height: 1px;
+  background-color: #ddd;
+  margin: 20px auto; /* 自動左右居中 */
+}
+@media (max-width: 600px) {
+.row {
+  flex-direction: column;
+}
+.left, .right {
+  flex: none;
+  width: 100%;
+  padding: 0px;
+}
+}
+footer {
+  text-align: center;
+  margin-top: 20px;
+  padding: 15px;
+  background-color: #5C9CD6;
+  color: white;
+}

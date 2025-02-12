@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>AIxMHC 2025</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+<style>
+.carousel { position: relative; }
+.slides .slide { display: none; position: relative; }
+.slides .slide img { width: 100%; }
+.text {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.4);
+  padding: 20px;
+  width: 50%;
+  height: 100%;
+}
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  padding: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.prev { text-decoration: none; left: 0; }
+.next { text-decoration: none; right: 0; }
+.sponsor-container {
+  display: flex;
+  flex-wrap: wrap; /* 允許元素換行 */
+  justify-content: center; /* 水平居中對齊 */
+  align-items: center; /* 垂直居中對齊 */
+  margin-top: 30px;
+}
+
+.sponsor-container a {
+  display: inline-block; /* 保持Link周圍的間距 */
+  margin: 20px;
+}
+
+.sponsor-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .sponsor-container {
+    flex-direction: column;
+  }
+
+  .sponsor-container a {
+    margin: 10px 0;
+  }
+}
+</style>
+	  
+<script>
+  window.onload = function() {
+    var myModal = new bootstrap.Modal(document.getElementById('importantUpdateModal'), {
+      keyboard: false
+    });
+    myModal.show();
+  };
+</script>
+	  
+  </head>
+  <body>
+	  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+		  <div class="container-fluid">
+			  <a class="navbar-brand" href="#"><img src="./images/logo.png" width="100px"></a>
+			  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+				  <span class="navbar-toggler-icon"></span>
+			  </button>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+					  <li class="nav-item">
+						  <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="about.html">About AIxMHC</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Committees</a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="committee.html">Organizing Committee</a></li>
+							  <li><a class="dropdown-item" href="committee2.html">Program Committee</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="keynotes.html">Keynotes</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="panel.html">Panels</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="submission.html">Submission</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="registration.html">Registration</a>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="work.html">Workshops</a>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Industry Partners</a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="sponsorship.html">Sponsorship</a></li>
+							  <li><a class="dropdown-item" href="callfor.html">Call for Industrial Sessions</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item dropdown">
+						  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Information</a>
+						  <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							  <li><a class="dropdown-item" href="venue.html">Conference Venue</a></li>
+							  <li><a class="dropdown-item" href="hotel.html">Hotel Reservation</a></li>
+							  <li><a class="dropdown-item" href="taichung.html">Taichung City</a></li>
+						  </ul>
+					  </li>
+					  <li class="nav-item">
+						  <a class="nav-link" href="contact.html">Contact</a>
+					  </li>
+				  </ul>
+			  </div>
+		  </div>
+	  </nav>
+
+
+	  <div class="background-image"></div>
+
+	  <div class="carousel">
+		  <div class="slides">
+			  <div class="slide">
+				  <img src="./images/06.png" alt="Image 6">
+				  <div class="text">
+					  <h1 style="font-size: 3vw;">2025 Second International Conference on Artificial Intelligence for Medicine, Health, and Care (AIxMHC)</h1>
+					  <h2 style="font-size: 2vw;">October 13-15, 2025, Taichung, Taiwan</h2>
+				  </div>
+			  </div>
+			  <div class="slide">
+				  <img src="./images/05.png" alt="Image 5">
+				  <div class="text">
+					  <h1 style="font-size: 3vw;">2025 Second International Conference on Artificial Intelligence for Medicine, Health, and Care (AIxMHC)</h1>
+					  <h2 style="font-size: 2vw;">October 13-15, 2025, Taichung, Taiwan</h2>
+				  </div>
+			  </div>
+			  <div class="slide">
+				  <img src="./images/01.png" alt="Image 1">
+				  <div class="text">
+					  <h1 style="font-size: 3vw;">2025 Second International Conference on Artificial Intelligence for Medicine, Health, and Care (AIxMHC)</h1>
+					  <h2 style="font-size: 2vw;">October 13-15, 2025, Taichung, Taiwan</h2>
+				  </div>
+			  </div>
+			  <div class="slide">
+				  <img src="./images/02.png" alt="Image 2">
+				  <div class="text">
+					  <h1 style="font-size: 3vw;">2025 Second International Conference on Artificial Intelligence for Medicine, Health, and Care (AIxMHC)</h1>
+					  <h2 style="font-size: 2vw;">October 13-15, 2025, Taichung, Taiwan</h2>
+				  </div>
+			  </div>
+			  <div class="slide">
+				  <img src="./images/04.png" alt="Image 4">
+				  <div class="text">
+					  <h1 style="font-size: 3vw;">2025 Second International Conference on Artificial Intelligence for Medicine, Health, and Care (AIxMHC)</h1>
+					  <h2 style="font-size: 2vw;">October 13-15, 2025, Taichung, Taiwan</h2>
+				  </div>
+			  </div>
+			  <!-- Add more slides as needed -->
+		  </div>
+		  <a class="prev" onclick="moveSlide(-1)">&#10094;</a>
+		  <a class="next" onclick="moveSlide(1)">&#10095;</a>
+	  </div>
+	  <!--公告研討會"彈跳視窗"訊息-->
+	  <!-- <div class="modal fade" id="importantUpdateModal" tabindex="-1" aria-labelledby="importantUpdateLabel" aria-hidden="true">
+	  <div class="modal-dialog">
+		<div class="modal-content">
+		  <div class="modal-header">
+			<h5 class="modal-title" id="importantUpdateLabel"><span style="color:#D80000;">Important Update: Conference Dates Change</span></h5>
+			<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		  </div>
+		  <div class="modal-body">
+			Due to unexpected circumstances, the AIxMHC 2025 has been rescheduled. The conference will now take place from October 13 to 15, 2025, in Taichung, Taiwan.
+			<br><br>
+			We apologize for any inconvenience caused and appreciate your understanding. Papers already submitted, as well as those submitted before the new submission deadline of May 15, 2025, will be reviewed on a first-come, first-served basis.
+			<br><br>
+			Thank you for your continued support.<br>
+			<strong>AIxMHC 2025 Organizing Committee</strong>
+		  </div>
+		  <div class="modal-footer">
+			<button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		  </div>
+		</div>
+	  </div>
+	</div>-->
+	  <!--公告研討會延期的訊息-->
+	  <!--<h4 style="margin:20px"><span style="color:#A00000;">Important Update: Conference Dates Change</span></h4>
+
+	<p>Due to unexpected circumstances, the AIxMHC 2025 has been rescheduled. The conference will now take place from October 13 to 15, 2025, in Taichung, Taiwan.</p>
+	<p>We apologize for any inconvenience caused and appreciate your understanding. Papers already submitted, as well as those submitted before the new submission deadline of May 15, 2025, will be reviewed on a first-come, first-served basis.</p><br>
+	<p>Thank you for your continued support.</p>
+	<p>AIxMHC 2025 Organizing Committee</p><br>-->
+
+	  <h4 style="margin:20px">Call for Papers</h4>
+		  <!--分隔線-->
+		  <hr style="border: 1.5px solid #143272; width: 95%; margin: 20px auto;">
+
+		  <!--<h1 style="text-align: center" style="font-size: 8vw;">Second International Conference on AI x Medicine, Health, and Care</h1>
+	<h2 style="text-align: center">March 3rd-5th, 2025, Taichung, Taiwan</h2>-->
+
+		  <p style="text-align: justify;">According to WHO: "Health is a state of complete physical, mental and social well-being and not merely the absence of disease or infirmity." With the recent advances of AI, including ChatGPT, we think it is the right time to address the broader impacts of AI on not only medicine but also mental health and social well-being in general, and vice versa. 2025 Second International Conference on Artificial Intelligence for Medicine, Health, and Care (AIxMHC), is an international forum for academia and industries to exchange visions and ideas in the state of the art and practice, as well as to identify the emerging topics and define the future of how AI can assist medicine, health and care.</p>
+
+		  <p>
+			  TOPICS OF INTEREST include, but are not limited to:<br>
+			  • Agent technology<br>
+			  • AI assisted living<br>
+			  • AI for well-being<br>
+			  • Analytics of medical and health related big data <br>
+			  • Bioinformatics and computational biology<br>
+			  • Computational behavior science<br>
+			  • Computational chemistry and drug design<br>
+			  • Computational food science<br>
+			  • Computational medicine<br>
+			  • Computational neuroscience<br>
+			  • Computer vision and natural language understanding<br>
+			  • Cyber security & privacy <br>
+			  • Generalist medical AI (GMAI)<br>
+			  • Generative AI (GAI） and Transformer based technology<br>
+			  • Generative AI (GAI) and its applications <br>
+			  • Humanized assistant<br>
+			  • Intelligent healthcare <br>
+			  • Knowledge and data engineering<br>
+			  • Long-term care system/ senior care<br>
+			  • Multi-modal human-computer interaction<br>
+			  • Platform and scalability<br>
+			  • Precision healthcare/ medicine/ nutrition<br>
+			  • Quantum computing<br>
+			  • Robotic intelligence<br>
+			  • Semantic computing
+		  </p>
+
+		  <!--<p>The conference proceedings will be published by the Computer Society Press. Distinguished quality papers presented at the conference will be selected for the best paper/poster awards and for publication in internationally renowned journals.</p><br>-->
+		  <p>Distinguished quality papers presented at the conference will be selected for the best paper/poster awards and for publication in internationally renowned journals.</p><br>
+
+		  <h4 style="margin:20px">Best Paper/Poster Award(s)</h4>
+		  <p>The award committee will select Best Paper/Poster Award(s) and present the winners with an actual frame Award Certificate at the conference banquet.</p><br>
+
+		  <h4 style="margin:20px">Important Dates</h4>
+
+		  <strong style="margin:20px">Submission Deadline&emsp;May 15, 2025</strong><br>
+		  <strong style="margin:20px">Notification Due&emsp;July 15, 2025</strong><br>
+		  <strong style="margin:20px">Final Version Due&emsp;Aug. 15, 2025</strong><br>
+		  <strong style="margin:20px">Conference Dates: &emsp;Oct. 13-15, 2025</strong><br>
+		  <br>
+
+		  <h4 style="margin:20px" class="oblique">Sponsored by</h4>
+		  <div class="sponsor-container">
+			  <!--<a href="https://www.comsoc.org/"><img src="images/IEEEComSoc.png" width="243" height="90" alt=""/></a>-->
+			  <a href="https://www.asia.edu.tw/"><img src="images/asia.jpg" width="330" height="90" alt="" /></a>
+			  <a href="https://www.nstc.gov.tw/"><img src="images/nstc.png" width="528" height="90" alt="" /></a>
+			  <a href="https://english.moe.gov.tw/mp-1.html"><img src="images/moe.png" width="140" height="90" alt="" /></a>
+			  <a href="https://www.cmu.edu.tw/"><img src="images/cmuh.jpg" width="250" height="90" alt="" /></a>
+		  </div>
+		  <div class="background-image" align="center"><img src="images/bg2.png" width="1200" height="675" alt="" /></div>
+		  <footer>
+			  <p></p>
+		  </footer>
+
+		  <script>
+		  let slideIndex = 0;
+		  showSlides(slideIndex);
+
+		  function moveSlide(n) {
+			  showSlides(slideIndex += n);
+		  }
+
+		  function showSlides(n) {
+			  let i;
+			  let slides = document.getElementsByClassName("slide");
+			  if (n >= slides.length) { slideIndex = 0 }
+			  if (n < 0) { slideIndex = slides.length - 1 }
+			  for (i = 0; i < slides.length; i++) {
+				  slides[i].style.display = "none";
+			  }
+			  slides[slideIndex].style.display = "block";
+		  }
+
+		  </script>
+		  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous">
+		  </script>
+</body>
+</html>
