@@ -141,6 +141,39 @@ th {
   background-color: #f2f2f2;
 }
 
+
+/*****Accepted Papers 表格版面*****/
+.table2 {
+  width: 80%;
+  border-collapse: collapse;
+  margin: 0 auto;
+}
+.table2 th, 
+.table2 td {
+  border: 1px solid #C2C2C2;
+  padding: 8px;
+  text-align: left;
+}
+.table2 th {
+  background-color: #C2C2C2;
+  text-align: center;   /* 水平置中 */
+  vertical-align: middle; /* 垂直置中 */
+}
+
+.table2 td:nth-child(1), 
+.table2 td:nth-child(3) {
+  text-align: center; /* ID 和 Paid 置中 */
+}
+
+.table2 td:nth-child(2) {
+  text-align: left;   /* Title 靠左 */
+}
+
+.table2 th {
+  background-color: #f2f2f2;
+}
+
+
 /* 手機裝置響應式設計 */
 @media (max-width: 600px) {
   table {
