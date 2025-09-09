@@ -244,6 +244,51 @@ footer {
   color: white;
 }
 
+.program-container {
+  margin: 20px;
+  overflow-x: auto;
+}
+
+.program-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 14px;
+  text-align: center;
+}
+
+.program-table th {
+  background-color: #ccffff;
+  border: 1px solid #333;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.program-table td {
+  border: 1px solid #333;
+  padding: 8px;
+  vertical-align: middle;
+}
+
+.program-table .time {
+  width: 120px;
+  background-color: #f9f9f9;
+  font-weight: bold;
+}
+
+.program-table .event {
+  text-align: center;
+}
+
+.program-table .highlight {
+  background-color: #c2d69b;
+  font-weight: bold;
+}
+
+.program-table .subtext {
+  font-size: 12px;
+  margin-top: 4px;
+  color: #333;
+}
 
 
 /* Program at a Glance - Word 風格表格 */
@@ -270,7 +315,7 @@ footer {
 }
 
 .glance-table th {
-  background-color: #afeeee;  /* 灰色表頭 */
+  background-color: #87cefa;  /* 灰色表頭 */
   font-weight: bold;
 }
 
