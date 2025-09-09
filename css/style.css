@@ -243,3 +243,42 @@ footer {
   background-color: #5C9CD6;
   color: white;
 }
+
+
+
+/* Program at a Glance - Word 風格表格 */
+.glance-table {
+  max-width: 95%;        /* 不要滿版 */
+  margin: 30px auto;     /* 置中，留白 */
+}
+
+.glance-table table {
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid #000000;
+  font-family: "Times New Roman", "新細明體", "PMingLiU", serif;
+  font-size: 12pt;
+  background-color: #fff;
+}
+
+.glance-table th,
+.glance-table td {
+  border: 1px solid #000000;  /* 黑色邊框 */
+  padding: 6px 10px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.glance-table th {
+  background-color: #afeeee;  /* 灰色表頭 */
+  font-weight: bold;
+}
+
+.glance-table caption {
+  caption-side: top;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14pt;
+  margin-bottom: 10px;
+}
+
