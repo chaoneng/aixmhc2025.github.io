@@ -1,0 +1,18 @@
+
+/* Scoped styles for Program at a Glance (namespaced) */
+.glance { margin: 2rem 0; }
+.glance-title { font-size: 1.5rem; line-height: 1.4; margin: 0 0 1rem; font-weight: 700; }
+.glance-section { margin: 1.25rem 0; }
+.glance-scroll { overflow-x: auto; -webkit-overflow-scrolling: touch; }
+.glance-table { width: 100%; border-collapse: collapse; }
+.glance-table th, .glance-table td { border: 1px solid #e5e7eb; padding: .5rem .625rem; vertical-align: top; }
+.glance-table th { font-weight: 700; background: #f9fafb; }
+.glance-table tr:nth-child(even) td { background: #fcfcfd; }
+.glance-table td:first-child { white-space: nowrap; width: 1%; }
+@media (max-width: 640px) {
+  .glance-title { font-size: 1.25rem; }
+  .glance-table th, .glance-table td { padding: .5rem; }
+}
+.glance-table p {
+  margin: 0;
+}
